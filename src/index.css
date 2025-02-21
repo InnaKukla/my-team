@@ -1,0 +1,65 @@
+:root {
+  --backMidnightGreen: #014E56;
+  --lightCoral: #F67E7E;
+  --white: #FFFFFF;
+  --raptureBlue: #79C8C7; 
+  --policeBlue:#2C6269; 
+  --deepJungleGreen: #004047;
+  --sacramentoStateGreen:  #012F34; 
+  --darkGreen:  #002529;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+p,
+li {
+  margin: 0;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+  font-family: inherit;
+}
+
+body {
+  margin: 0;
+  font-family: Livvic;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  background-color: var(--background-color);
+  overflow-x: hidden;
+
+  overflow-y: scroll;
+  scrollbar-width: thin;
+
+  scrollbar-gutter: stable;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
