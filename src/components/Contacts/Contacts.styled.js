@@ -30,18 +30,18 @@ export const ContactsHeroWrapper = styled.div`
 export const ContactsWrap = styled.div`
   will-change: background-image;
   padding: 48px 24px 88px 24px;
-  background-image: url("/contacts-phone.jpg");
+  background-image: url("contacts-phone.jpg");
   background-size: cover;
   background-position: bottom;
 
   @media screen and (min-width: 768px) {
     padding: 64px 39px 64px 39px;
-    background-image: url("/contacts-tablet.jpg");
+    background-image: url("contacts-tablet.jpg");
   }
 
   @media screen and (min-width: 1280px) {
     padding: 73px 165px;
-    background-image: url("/contacts-desktop.jpg");
+    background-image: url("contacts-desktop.jpg");
   }
 `;
 export const ContactsHeroSection = styled.section`
