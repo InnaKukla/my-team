@@ -13,17 +13,17 @@ export const AboutHeroSection = styled.section`
 
 export const AboutDirectorsWrapper = styled.section`
   padding: 88px 24px 116px 24px;
-  background-image: url("about-directors-phone.jpg");
+  background-image: url("${process.env.PUBLIC_URL}/about-directors-phone.jpg");
   background-size: cover;
   @media screen and (min-width: 768px) {
-    background-image: url("about-directors-tablet.jpg");
+    background-image: url("${process.env.PUBLIC_URL}/about-directors-tablet.jpg");
     background-size: cover;
     background-position: top;
   }
 
   @media screen and (min-width: 1280px) {
     padding: 140px 165px 168px 165px;
-    background-image: url("about-directors.jpg");
+    background-image: url("${process.env.PUBLIC_URL}/about-directors.jpg");
     background-size: cover;
     background-position: bottom;
   }
@@ -45,7 +45,6 @@ export const AboutDirectorsIconsWrapper = styled.div`
   }
 
   @media screen and (min-width: 1280px) {
-
   }
 `;
 
@@ -61,17 +60,17 @@ export const AboutDirectorsTextWrapper = styled.div`
 `;
 export const AboutClientsWrapper = styled.section`
   padding: 88px 24px;
-  background-image: url("about-clients-phone.jpg");
+  background-image: url("${process.env.PUBLIC_URL}/about-clients-phone.jpg");
   background-size: cover;
   @media screen and (min-width: 768px) {
     padding: 88px 39px;
-    background-image: url("about-clients-tablet.jpg");
+    background-image: url("${process.env.PUBLIC_URL}/about-clients-tablet.jpg");
     background-size: cover;
   }
 
   @media screen and (min-width: 1280px) {
     padding: 140px 165px 140px 165px;
-    background-image: url("about-clients.jpg");
+    background-image: url("${process.env.PUBLIC_URL}/about-clients.jpg");
     background-size: cover;
   }
 `;
@@ -112,23 +111,20 @@ export const AboutHeroContainer = styled.div`
 export const AboutWrap = styled.div`
   padding: 48px 24px 108px 24px;
   will-change: background-image;
-  background-image: url("about-header-phone.jpg");
+  background-image: url("${process.env.PUBLIC_URL}/about-header-phone.jpg");
   background-size: cover;
   background-position: bottom;
 
   @media screen and (min-width: 768px) {
-    padding: 64px 39px 108px 39px;
-    background-image: url("about-header-tablet.jpg");
-    background-size: cover;
+    padding: 48px 39px 108px 39px;
+    background-image: url("${process.env.PUBLIC_URL}/about-header-tablet.jpg");
     background-position: right;
   }
 
   @media screen and (min-width: 1280px) {
     padding: 73px 165px 120px 165px;
 
-    background-image: url("bg-about-1.jpg");
-    background-size: cover;
-    background-position: right;
+    background-image: url("${process.env.PUBLIC_URL}/bg-about-1.jpg");
   }
 `;
 

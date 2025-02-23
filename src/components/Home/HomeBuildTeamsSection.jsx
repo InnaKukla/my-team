@@ -19,7 +19,7 @@ import { ReactComponent as BuildTeamThird } from "../../assets/diagramIcon.svg";
 const HomeBuildTeamsSection = () => {
   return (
     <>
-      <HomeSection>
+    <HomeSection>
         <SectionContainer>
           <HomeFirstSectionWrapper>
             <HomeFirstSectionMainTextWrapper

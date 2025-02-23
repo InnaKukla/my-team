@@ -13,9 +13,11 @@ import { ReactComponent as ContactsManIcon } from "../../assets/manIcon.svg";
 import { ReactComponent as ContactsSettingIcon } from "../../assets/settingIcon.svg";
 import { ReactComponent as ContactsDiagramIcon } from "../../assets/diagramIcon.svg";
 import { SectionContainer } from "../Home/Home.styled";
+
+
+
 const ContactsHero = () => {
   return (
-    
         <ContactsHeroWrapper>
             <ContactsTitle>Contact</ContactsTitle>
         <ContactsText>Ask us about</ContactsText>

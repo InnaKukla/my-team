@@ -1,6 +1,7 @@
 import { Box, TextField } from "@mui/material";
 import styled from "styled-components";
 
+
 export const ContactsWrapper = styled.div`
   @media screen and (min-width: 768px) {
   }
@@ -10,6 +11,20 @@ export const ContactsWrapper = styled.div`
     gap: 62px;
     align-items: end;
   }
+`;
+
+
+export const LoaderWrapper = styled.div`
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  z-index: 999;
 `;
 
 export const ContactsHeroWrapper = styled.div`
@@ -27,23 +42,27 @@ export const ContactsHeroWrapper = styled.div`
     width: 100%;
   }
 `;
+
 export const ContactsWrap = styled.div`
-  will-change: background-image;
-  padding: 48px 24px 88px 24px;
-  background-image: url("contacts-phone.jpg");
+  padding: 48px 24px 112px 24px;
+  background-image: url("${process.env.PUBLIC_URL}/contacts-phone.jpg");
   background-size: cover;
   background-position: bottom;
+  opacity: 0; /* Початково приховуємо */
+  transition: opacity 0.5s ease-in-out; 
+  /* Плавне з’явлення */
 
   @media screen and (min-width: 768px) {
-    padding: 64px 39px 64px 39px;
-    background-image: url("contacts-tablet.jpg");
+    padding: 48px 39px 112px 39px;
+    background-image: url("${process.env.PUBLIC_URL}/contacts-tablet.jpg");
   }
 
   @media screen and (min-width: 1280px) {
-    padding: 73px 165px;
-    background-image: url("contacts-desktop.jpg");
+    padding: 73px 165px 88px 165px;
+    background-image: url("${process.env.PUBLIC_URL}/contacts-desktop.jpg?v=2");
   }
 `;
+
 export const ContactsHeroSection = styled.section`
   margin: auto auto;
   margin-top: 80px;

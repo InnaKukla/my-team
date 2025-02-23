@@ -3,20 +3,20 @@ import styled from "styled-components";
 export const PreFooterSection = styled.section`
   padding: 83px 24px;
   will-change: background-image;
-  background-image: url("bg-image-home-phone-prefooter.jpg");
+  background-image: url("${process.env.PUBLIC_URL}/bg-image-home-phone-prefooter.jpg");
   background-size: cover;
   background-position: bottom;
 
   @media screen and (min-width: 768px) {
     padding: 76px 97px;
 
-    background-image: url("bg-image-home-prefooter.jpg");
+    background-image: url("${process.env.PUBLIC_URL}/bg-image-home-prefooter.jpg?v=2");
     
   }
 
   @media screen and (min-width: 1280px) {
     padding: 84px 165px;
-    background-image: url("pre-footer.jpg");
+    background-image: url("${process.env.PUBLIC_URL}/pre-footer.jpg?v=2");
   }
 `;
 

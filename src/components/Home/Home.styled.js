@@ -4,56 +4,61 @@ import { ReactComponent as Decor } from "../../assets/decor.svg";
 export const HomeWrap = styled.div`
   padding: 48px 24px 197px 24px;
   will-change: background-image;
-  background-image: url("bg-image-home-phone-1.jpg");
+  background-image: url("${process.env.PUBLIC_URL}/bg-image-home-phone-1.jpg");
   background-size: cover;
   background-position: bottom;
+  /* opacity: 0;  */
 
   @media screen and (min-width: 768px) {
-    padding: 64px 45px 256px 45px;
-    background-image: url("bg-image-home-tablet-1.jpg");
+    padding: 48px 39px 256px 39px;
+    background-image: url("${process.env.PUBLIC_URL}/bg-image-home-tablet-1.jpg");
+
   }
 
   @media screen and (min-width: 1280px) {
     padding: 73px 165px 250px 165px;
-    background-image: url("bg2-header.jpg");
+    background-image: url("${process.env.PUBLIC_URL}/bg2-header.jpg");
+    /* background-image: url("bg2-header.jpg"); */
+
   }
 `;
 
 export const HomeSection = styled.section`
   padding: 64px 24px;
   will-change: background-image;
-  background-image: url("bg-image-home-phone-2.jpg");
+  background-image: url("${process.env.PUBLIC_URL}/bg-image-home-phone-2.jpg");
   background-size: cover;
 
   @media screen and (min-width: 768px) {
     padding: 100px 97px;
-    background-image: url("bg-image-home-tablet-2.jpg");
+    background-image: url("${process.env.PUBLIC_URL}/bg-image-home-tablet-2.jpg");
     background-size: cover;
     background-position: bottom;
   }
 
   @media screen and (min-width: 1280px) {
     padding: 140px 165px;
-    background-image: url("bg2-first-section.jpg");
+    background-image: url("${process.env.PUBLIC_URL}/bg2-first-section.jpg");
   }
 `;
 
-export const HomeSuccessStoriesSectionWrap = styled(HomeSection)`
+export const HomeSuccessStoriesSectionWrap = styled.section`
   padding: 140px 24px 173px 24px;
   will-change: background-image;
-  background-image: url("bg-image-home-phone-3.jpg");
+  background-image: url("${process.env.PUBLIC_URL}/bg-image-home-phone-3.jpg");
+  background-size: cover;
+    background-position: bottom;
 
   @media screen and (min-width: 768px) {
     padding: 100px 97px;
-    background-image: url("bg-image-home-tablet-3.jpg");
-    background-size: cover;
-    background-position: bottom;
+    background-image: url("${process.env.PUBLIC_URL}/bg-image-home-tablet-3.jpg");
+
   }
 
   @media screen and (min-width: 1280px) {
     padding: 124px 165px;
 
-    background-image: url("bg2-second-section.jpg");
+    background-image: url("${process.env.PUBLIC_URL}/bg2-second-section.jpg");
   }
 `;
 
