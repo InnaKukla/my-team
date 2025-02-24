@@ -89,7 +89,7 @@ const SideBarHeader = () => {
             size="large"
             color="inherit"
             aria-label="menu"
-            sx={{padding: 0 }}
+            sx={{ padding: 0 }}
             id="basic-button"
             onClick={toggleDrawer(anchor, true)}
           >

@@ -7,7 +7,6 @@ import {
   FooterSection,
   FooterSocialIconsWrapper,
   FooterText,
-  FooterSocialIcon,
   FooterSectionWrapper,
   FooterContentSocialCopyrightWrapper,
   FooterLogo,

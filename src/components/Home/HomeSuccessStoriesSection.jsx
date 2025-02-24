@@ -49,7 +49,7 @@ const HomeSuccessStoriesSection = () => {
             <HomeSuccessStoriesSectionList>
               {successStoryPeople.map((item) => (
                 <div
-                key={item.name}
+                  key={item.name}
                   style={{
                     position: "relative",
                     display: "flex",
@@ -89,7 +89,6 @@ const HomeSuccessStoriesSection = () => {
               ))}
             </HomeSuccessStoriesSectionList>
           </div>
-          
         </SectionContainer>
       </HomeSuccessStoriesSectionWrap>
     </>

@@ -121,10 +121,10 @@ const AboutDirectorsSection = () => {
                     <TwitterIcon />
                     <LinkedinIcon />
                   </AboutDirectorsIconsWrapper>
-                  <AboutDirectorsIconPlus isactive={activeIndex === index ? true : undefined}>
-                    <Cancel
-                      onClick={() => handleToggle(index)}
-                    />
+                  <AboutDirectorsIconPlus
+                    isactive={activeIndex === index ? true : undefined}
+                  >
+                    <Cancel onClick={() => handleToggle(index)} />
                   </AboutDirectorsIconPlus>
                 </>
               ) : (
@@ -150,7 +150,9 @@ const AboutDirectorsSection = () => {
                       {item.position}
                     </HomeSuccessStoriesSectionPosition>
                   </div>
-                  <AboutDirectorsIconPlus isactive={activeIndex === index ? true : undefined}>
+                  <AboutDirectorsIconPlus
+                    isactive={activeIndex === index ? true : undefined}
+                  >
                     <Plus onClick={() => handleToggle(index)} />
                   </AboutDirectorsIconPlus>
                 </>

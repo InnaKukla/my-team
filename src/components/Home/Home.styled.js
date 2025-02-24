@@ -7,19 +7,15 @@ export const HomeWrap = styled.div`
   background-image: url("${process.env.PUBLIC_URL}/bg-image-home-phone-1.jpg");
   background-size: cover;
   background-position: bottom;
-  /* opacity: 0;  */
 
   @media screen and (min-width: 768px) {
     padding: 48px 39px 256px 39px;
     background-image: url("${process.env.PUBLIC_URL}/bg-image-home-tablet-1.jpg");
-
   }
 
   @media screen and (min-width: 1280px) {
     padding: 73px 165px 250px 165px;
     background-image: url("${process.env.PUBLIC_URL}/bg2-header.jpg");
-    /* background-image: url("bg2-header.jpg"); */
-
   }
 `;
 
@@ -47,12 +43,11 @@ export const HomeSuccessStoriesSectionWrap = styled.section`
   will-change: background-image;
   background-image: url("${process.env.PUBLIC_URL}/bg-image-home-phone-3.jpg");
   background-size: cover;
-    background-position: bottom;
+  background-position: bottom;
 
   @media screen and (min-width: 768px) {
     padding: 100px 97px;
     background-image: url("${process.env.PUBLIC_URL}/bg-image-home-tablet-3.jpg");
-
   }
 
   @media screen and (min-width: 1280px) {
@@ -95,8 +90,6 @@ export const HomeFirstSectionMainTextWrapper = styled.div`
 export const HomeFirstSectionWrapper = styled.div`
   display: flex;
   flex-direction: column;
-
-  /* align-items: center; */
 
   @media screen and (min-width: 768px) {
     display: flex;
@@ -172,10 +165,6 @@ export const HomeFirstSectionGroupTitle = styled.p`
     text-decoration-skip-ink: none;
     color: #f67e7e;
     margin-bottom: 16px;
-    /* margin-bottom: 16px;
-    &:not(:last-child) {
-      margin-bottom: 16px;
-    } */
   }
 
   @media screen and (min-width: 1280px) {
@@ -203,15 +192,9 @@ export const HomeFirstSectionGroupText = styled.p`
     text-decoration-skip-ink: none;
     color: #ffffff;
     opacity: 80%;
-    /* &:not(:last-child) {
-      margin-left: 30px;
-    } */
   }
 
   @media screen and (min-width: 1280px) {
-    /* &:not(:last-child) {
-      margin-left: 30px;
-    } */
   }
 `;
 

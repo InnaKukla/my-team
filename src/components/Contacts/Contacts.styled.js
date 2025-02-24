@@ -1,7 +1,6 @@
 import { Box, TextField } from "@mui/material";
 import styled from "styled-components";
 
-
 export const ContactsWrapper = styled.div`
   @media screen and (min-width: 768px) {
   }
@@ -12,7 +11,6 @@ export const ContactsWrapper = styled.div`
     align-items: end;
   }
 `;
-
 
 export const LoaderWrapper = styled.div`
   position: fixed;
@@ -48,9 +46,8 @@ export const ContactsWrap = styled.div`
   background-image: url("${process.env.PUBLIC_URL}/contacts-phone.jpg");
   background-size: cover;
   background-position: bottom;
-  opacity: 0; /* Початково приховуємо */
-  transition: opacity 0.5s ease-in-out; 
-  /* Плавне з’явлення */
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
 
   @media screen and (min-width: 768px) {
     padding: 48px 39px 112px 39px;

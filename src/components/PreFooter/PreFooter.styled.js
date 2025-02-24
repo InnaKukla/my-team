@@ -11,7 +11,6 @@ export const PreFooterSection = styled.section`
     padding: 76px 97px;
 
     background-image: url("${process.env.PUBLIC_URL}/bg-image-home-prefooter.jpg?v=2");
-    
   }
 
   @media screen and (min-width: 1280px) {
@@ -30,7 +29,6 @@ export const PreFooterTitle = styled.h2`
   text-decoration-skip-ink: none;
 
   color: #012f34;
-  
 
   @media screen and (min-width: 768px) {
   }
@@ -82,6 +80,5 @@ export const PreFooterContentWrapper = styled.div`
   }
 
   @media screen and (min-width: 1280px) {
-
   }
 `;

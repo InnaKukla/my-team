@@ -13,7 +13,6 @@ const AboutHero = () => {
         <AboutHeroText>About</AboutHeroText>
         <AboutRightSection>
           <div className="aboutLine" />
-          {/* <HeroDecoration /> */}
           <p>
             We help companies build dynamic teams made up of top global talent.
             Using our network of passionate professionals we drive innovation

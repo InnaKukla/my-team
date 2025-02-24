@@ -43,7 +43,7 @@ const ContactsForm = () => {
     } else if (name === "email") {
       setFieldValidity((prev) => ({
         ...prev,
-        email: /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value), 
+        email: /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value),
       }));
     }
   };

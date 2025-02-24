@@ -54,7 +54,7 @@ export const HeroText = styled.div`
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
     color: #ffffff;
-    
+
     span {
       color: #f67e7e;
     }
@@ -68,12 +68,11 @@ export const HeroText = styled.div`
   }
 
   @media screen and (min-width: 1280px) {
-   
     h1 {
       text-align: left;
-    font-size: 100px;
-    font-weight: 700;
-    line-height: 100px;
+      font-size: 100px;
+      font-weight: 700;
+      line-height: 100px;
       text-align: left;
     }
   }

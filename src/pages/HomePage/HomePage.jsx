@@ -20,7 +20,6 @@ const HomePage = () => {
 
   useEffect(() => {
     const loadImages = () => {
-      console.log("Start loading images...");
       return Promise.all(
         images.map(
           (img) =>
@@ -28,7 +27,6 @@ const HomePage = () => {
               const image = new Image();
               image.src = img;
               image.onload = () => {
-                console.log(`Image loaded: ${img}`);
                 resolve();
               };
             })
@@ -38,7 +36,6 @@ const HomePage = () => {
 
     loadImages()
       .then(() => {
-        console.log("All images loaded");
         setLoaded(true);
       })
       .catch((err) => {

@@ -1,5 +1,9 @@
 import React, { useEffect, useState } from "react";
-import { AboutClientsContentWrapper, AboutClientsMainText, AboutClientsWrapper } from "./About.styled";
+import {
+  AboutClientsContentWrapper,
+  AboutClientsMainText,
+  AboutClientsWrapper,
+} from "./About.styled";
 import { SectionContainer } from "../Home/Home.styled";
 import { ReactComponent as ClientsList } from "../../assets/clients.svg";
 import { ReactComponent as ClientsListPhone } from "../../assets/clients-phone.svg";
@@ -23,12 +27,12 @@ const AboutClients = () => {
     <AboutClientsWrapper>
       <SectionContainer>
         <AboutClientsContentWrapper>
-        <AboutClientsMainText>Some of our clients</AboutClientsMainText>
-        {isType === "phone" && <ClientsListPhone />}
-        {isType === "tablet" && (
-          <ClientsListTablet style={{ width: "689px" }} />
-        )}
-        {isType === "desktop" && <ClientsList />}
+          <AboutClientsMainText>Some of our clients</AboutClientsMainText>
+          {isType === "phone" && <ClientsListPhone />}
+          {isType === "tablet" && (
+            <ClientsListTablet style={{ width: "689px" }} />
+          )}
+          {isType === "desktop" && <ClientsList />}
         </AboutClientsContentWrapper>
       </SectionContainer>
     </AboutClientsWrapper>

@@ -19,18 +19,19 @@ import { ReactComponent as BuildTeamThird } from "../../assets/diagramIcon.svg";
 const HomeBuildTeamsSection = () => {
   return (
     <>
-    <HomeSection>
+      <HomeSection>
         <SectionContainer>
           <HomeFirstSectionWrapper>
-            <HomeFirstSectionMainTextWrapper
-            >
+            <HomeFirstSectionMainTextWrapper>
               <HomePageLine />
               <HomeFirstSectionTitle>
                 Build & manage distributed teams like no one else.
               </HomeFirstSectionTitle>
             </HomeFirstSectionMainTextWrapper>
 
-            <HomeFirstSectionListWrap style={{display: 'flex', flexDirection: 'column', gap: '32px'}}>
+            <HomeFirstSectionListWrap
+              style={{ display: "flex", flexDirection: "column", gap: "32px" }}
+            >
               <HomeFirstSectionGroupWrap>
                 <div>
                   <BuildTeamFirst />
