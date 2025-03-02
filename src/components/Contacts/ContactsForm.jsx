@@ -174,7 +174,6 @@ const ContactsForm = () => {
         className="inputMessage"
         $isvalid={fieldValidity.message}
         value={formData.message}
-        rows={3}
         multiline
         onChange={handleChange}
       />

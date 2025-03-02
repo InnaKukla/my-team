@@ -1,6 +1,7 @@
 import { lazy, Suspense } from "react";
 import { Route, Routes } from "react-router";
 import Loader from "./shared/Loader/Loader";
+import ScrollToTop from "./shared/scrollToTop";
 
 const Layout = lazy(() => import("./components/Layout/Layout"));
 const HomePage = lazy(() => import("./pages/HomePage/HomePage"));
@@ -10,6 +11,7 @@ const ContactsPage = lazy(() => import("./pages/ContactsPage/ContactsPage"));
 function App() {
   return (
     <>
+    <ScrollToTop/>
       <Suspense fallback={<Loader />}>
         <Routes>
           <Route path="/" element={<Layout />}>

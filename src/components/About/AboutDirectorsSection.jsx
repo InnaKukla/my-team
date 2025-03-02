@@ -26,6 +26,7 @@ import { ReactComponent as LinkedinIcon } from "../../assets/linkedin-logo.svg";
 import { ReactComponent as Plus } from "../../assets/plus.svg";
 import { ReactComponent as Cancel } from "../../assets/cancel.svg";
 import { useState } from "react";
+import { Link } from "react-router";
 
 const AboutDirectorsSection = () => {
   const [activeIndex, setActiveIndex] = useState(null);
@@ -118,8 +119,12 @@ const AboutDirectorsSection = () => {
                     </HomeSuccessStoriesSectionText>
                   </AboutDirectorsTextWrapper>
                   <AboutDirectorsIconsWrapper>
+                    <Link to="https://x.com/?lang=uk">
                     <TwitterIcon />
+                    </Link>
+                    <Link to="https://www.linkedin.com">
                     <LinkedinIcon />
+                    </Link>
                   </AboutDirectorsIconsWrapper>
                   <AboutDirectorsIconPlus
                     isactive={activeIndex === index ? true : undefined}
