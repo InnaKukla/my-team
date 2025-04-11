@@ -6,22 +6,14 @@ import {
   ContactsButton,
   NavLogo,
 } from "./Header.styled";
-
+import { useMediaQuery } from "react-responsive";
 import Logo from "../../assets/myteam-logo.svg";
 import SideBarHeader from "../SideBarHeader/SideBarHeader";
-import { useState } from "react";
 import { Link, NavLink } from "react-router";
 
 const Header = () => {
-  const [isMobile, setIsMobile] = useState(false);
+  const isMobile = useMediaQuery({ maxWidth: 768 });
 
-  useEffect(() => {
-    const windowSize = window.innerWidth;
-
-    if (windowSize <= 768) {
-      setIsMobile(true);
-    }
-  }, []);
 
   return (
     <HeaderContainer>
